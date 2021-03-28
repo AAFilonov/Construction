@@ -115,12 +115,12 @@
 
                 <a class="navbar-brand" href="#">myProvider.com</a>
                 <ul class="navbar-nav ml-left">
-                    <li class="nav-item active "> <a class="nav-link" href="#"> Главная</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/index.html"> Главная</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Наши услуги</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown03">
-                            <a class="dropdown-item" href="#">Интернет</a>
+                            <a class="dropdown-item" href="internet.html">Интернет</a>
                             <a class="dropdown-item" href="#">ТВ</a>
                             <a class="dropdown-item" href="#">Интернет+ТВ</a>
                             <a class="dropdown-item" href="#">Телефония</a>
@@ -139,28 +139,33 @@
     </header>
 
     <!-- Content -->
-    <div class="content">
+    <div class="content container">
 
 
+        <div class="row">
+            <form class="col-4">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <!--  <button type="submit" class="btn btn-primary">Submit</button>-->
+                <a class="btn btn-lg btn-block btn-outline-primary" href="request send.html">
+                    Отправить
+                </a>
+            </form>
+        </div>
 
-        <form>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                    else.</small>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
     </div>
     <!-- Footer -->
     <footer class="container-fluid py-5 px-3 footer bg-dark">
